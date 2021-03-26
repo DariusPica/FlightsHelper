@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="-3.0" prefHeight="403.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Zboruri">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableZboruri" prefHeight="369.0" prefWidth="444.0">
+                          <columns>
+                            <TableColumn fx:id="tableZboruriDestinatie" prefWidth="75.0" text="Destinatie" />
+                            <TableColumn fx:id="tableZboruriData" prefWidth="125.0" text="Ora si data" />
+                              <TableColumn fx:id="tableZboruriAeroport" prefWidth="108.0" text="Aeroport" />
+                              <TableColumn fx:id="tableZboruriLocuri" prefWidth="135.0" text="Locuri disponibile" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="logoutButton" layoutX="488.0" layoutY="172.0" mnemonicParsing="false" text="Logout" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Cautare">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="616.0">
+                     <children>
+                        <TableView fx:id="tableZboruriSearch" prefHeight="367.0" prefWidth="354.0">
+                          <columns>
+                            <TableColumn fx:id="tableZboruriDestinatieSearch" prefWidth="75.0" text="Destinatie" />
+                            <TableColumn fx:id="tableZboruriDataSearch" prefWidth="75.0" text="Ora si data" />
+                              <TableColumn fx:id="tableZboruriAeroportSearch" prefWidth="75.0" text="Aeroport" />
+                              <TableColumn fx:id="tableZboruriLocuriSearch" prefWidth="128.0000061035156" text="Locuri disponibile" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="destinatieText" layoutX="395.0" layoutY="17.0" />
+                        <Label layoutX="442.0" text="Destinatie" />
+                        <DatePicker fx:id="dataInput" layoutX="383.0" layoutY="59.0" />
+                        <Label layoutX="456.0" layoutY="42.0" text="Data" />
+                        <Button fx:id="searchButton" layoutX="445.0" layoutY="101.0" mnemonicParsing="false" text="Cauta" />
+                        <TextField fx:id="clientText" layoutX="395.0" layoutY="149.0" />
+                        <TextField fx:id="pasageriText" layoutX="395.0" layoutY="201.0" />
+                        <TextField fx:id="adresaText" layoutX="395.0" layoutY="249.0" />
+                        <Label layoutX="436.0" layoutY="132.0" text="Nume client" />
+                        <Label layoutX="429.0" layoutY="186.0" text="Nume pasageri" />
+                        <Label layoutX="437.0" layoutY="232.0" text="Adresa client" />
+                        <Label layoutX="435.0" layoutY="284.0" text="Numar locuri" />
+                        <Button fx:id="buyButton" layoutX="437.0" layoutY="332.0" mnemonicParsing="false" text="Cumpara" />
+                        <TextField fx:id="locuriText" layoutX="394.0" layoutY="301.0" prefHeight="25.0" prefWidth="152.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
